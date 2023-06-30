@@ -1,0 +1,134 @@
+/**
+ * @name Vape V4
+ * @author MiloTheGoat_JS
+ * @description A better theme of Vape V4
+ * @source https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/BasicBackground/BasicBackground.theme.css
+ * @authorId 278543574059057154
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;700&display=swap');
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/BasicBackground/BasicBackground.css');
+@import "https://nyri4.github.io/Discolored/main.css";
+@import url("https://nyri4.github.io/donators/donators.css");
+
+:root {
+  --background: url('https://i.imgur.com/E6bSxP6.png');
+  --backgroundsize: cover;
+  --backgroundposition: center;
+  --backgroundblur: 1px;
+  --popout: var(--background);
+  --popoutsize: var(--backgroundsize);
+  --popoutblur: 2px;
+  --transparencycolor: 50,50,50;
+  --accentcolor: 0,81,74;
+  --backdrop: rgba(0,0,0,0.85);
+  --textshadow: rgba(163, 42, 42, 0);
+  --transparencyalpha: 0.46;
+  --messagetransparency: 0;
+  --guildchanneltransparency: 0.34;
+  --chatinputtransparency: 0;
+  --memberlisttransparency: 0.02;
+  --font: Noto Sans;
+  --textbrightest: 255,255,255;
+  --textbrighter: 222,222,222;
+  --textbright: 200,200,200;
+  --textdark: 160,160,160;
+  --textdarker: 125,125,125;
+  --textdarkest: 90,90,90;
+  --settingsicons: 1;
+  --backdropsize: var(--background-size);
+  --backdropblur: 0px;
+  --version1_0_5: none;
+}
+
+/* Any custom CSS below here */
+
+/* Re-round Spotify Status Images */
+.assetsLargeImageSpotify-17ME3M{border-radius:8px;}
+
+/*user popout*/
+
+.profileBanner-33-uE1 {
+  background: none;
+}
+
+.avatarWrapperNormal-2tu8Ts {
+  left: 35%;
+}
+
+.headerTop-2y3V6H > .profileBadges-1dm1_q {
+  display: none;
+}
+
+.headerText-2WJ44e {
+  text-align: center;
+}
+
+.username-2b1r56.headerTagUsernameNoNickname-1SSLBc.headerTagUsernameBase-12nwcw {
+  overflow: hidden;
+}
+
+#app-mount .profileBanner-33-uE1, .banner-2QYc2d {
+  display: none;
+}
+
+#app-mount .avatar-22FtUu {
+  margin-top: -20px;
+  margin-left: -100px;
+  padding: 1px;
+}
+
+#app-mount .headerTagNoNickname-3ak9o8 .headerTag-nSOkYt, .size14-3iUx6q, .size20-2QkeeC {
+  font-size: 16px;
+  margin-left: 100px;
+  margin-top: -30px;
+}
+
+#app-mount .nickname-322DbL {
+  position: absolute;
+}
+
+.date-YN6TCS {
+  user-select: text;
+}
+
+.avatarHint-1E3LMl {
+  margin-top: -20px;
+  margin-left: -100px;
+  padding: 1px;
+}
+
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.207/distr/fira_code.css);
+
+code, .codeLine-14BKbG { font-family: 'Fira Code', monospace; }
+
+/* new friends list thing ew with animation*/
+.peopleListItem-2nzedh {
+  background-color: transparent;
+}
+.peopleListItem-2nzedh:hover {
+  transition: all 0.3s ease;
+  transform: translateX(-0.5em);
+  border-right: solid 0.3em #000000;
+  border-bottom: solid 1px rgba(0, 0, 0, 0);
+}
+
+.iconWrapper-2OrFZ1::after {
+    content:'';
+    position:absolute;
+    background:#fff;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    border-radius:inherit;
+    opacity:0;
+    pointer-events:none;
+    transform:scale(0);
+    transition: opacity 50ms linear;
+}
+.iconWrapper-2OrFZ1:active::after {
+    transform:scale(1);
+    opacity:.24;
+    transition: opacity 50ms linear, transform 150ms ease;
+}
